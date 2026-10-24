@@ -1,0 +1,6 @@
+# Mount dsh-ui-colors into a DSH profile. The package's dsh.bundle
+# declaration points at this patch, so the plugin manager can install and
+# select it as a bundle.
+- insert:
+    - id: ui-colors
+      name: dsh-ui-colors
