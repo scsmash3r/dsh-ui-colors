@@ -25,19 +25,6 @@ Under **Settings → Customize**:
 - **Border radius** — Default, Half, or None.
 - **Language** — English and Simplified Chinese follow the DSH locale setting; changing the DSH language updates the section without a reload.
 
-Plugin uses the supported theme seam rather than patching the UI:
-
-```js
-ctx.theme.overrideTokens('ui-colors', {
-  '--dsw-specific-sidebar-fill': { light: '#…', dark: '#…' },
-  …
-})
-```
-
-Colors and borders are ordinary volatile plugin config, so they persist in the profile patch alongside the other UI preferences. The override layer applies live; no reload is needed after changing a value.
-
----
-
 The `dsh-ui-colors` plugin adds a "Customize" section under "Settings", where you can have some options to tweak: under Palette you have a "Spectrum" to choose from main accent colors, and under "Preset" there are some basic presets that change the values of surface fills, neutral color steps and border colors.
 
 You also have a "Full semantic theme" switch, where the colors from the spectrum are also applied with its own inner color scope, adding some more colors instead of just hue and saturation from one main color.
@@ -52,7 +39,21 @@ Oh, and of course you can manually modify some values per surface in "Colors", a
 
 ---
 
-That is all for now, but I am open to suggestions for what to add next. Or you can rely on your agent and inject some presets and spectra yourself.
+Plugin uses the supported theme seam rather than patching the UI:
+
+```js
+ctx.theme.overrideTokens('ui-colors', {
+  '--dsw-specific-sidebar-fill': { light: '#…', dark: '#…' },
+  …
+})
+```
+
+Colors and borders are ordinary volatile plugin config, so they persist in the profile patch alongside the other UI preferences. The override layer applies live; no reload is needed after changing a value.
+
+---
+
+> [!TIP]
+> That is all for now, but I am open to suggestions for what to add next. Or you can rely on your agent and inject some presets and spectra yourself.
 
 
 ## Documentation
