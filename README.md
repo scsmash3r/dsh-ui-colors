@@ -1,13 +1,17 @@
 # dsh-ui-colors
 
-<div align="center"><b style="font-size: 1.15em;">Customize maximum theme coverage with a minimal set of controls.</b></div>
-
+> <div align="center"><b style="font-size: 1.15em;">Customize maximum theme coverage with a minimal set of controls.</b></div>
 ![dsh-ui-colors](docs/assets/dsh-ui-colors.gif)
 
 ---
 This is a UI plugin I wrote for myself for controlling how DSH WEB client looks like. Basically I wanted to achieve maximum theme coverage with a small set of controls. I mainly use DSH from VS Code, where I already have a custom editor theme, so I wanted to match built-in browser `dsh web` window with my IDE's theme.
 
 Directly applying VS Code theme into DSH is not possible without some crude adapters, so instead I started with [dsh-web-ui-design-spec.md](https://github.com/DDDPG/dsh-plugins/blob/main/docs/dsh-web-ui-design-spec.md) and built this plugin. It modifies basic primitives and color tokens, so UI should be consistent in other plugins that utilize the same default DSH CSS. Yes, of course you can modify the UI, using the agent itself, but here's the plugin already that covers most of basic UI needs for majority of geeks out there.
+
+
+
+https://github.com/user-attachments/assets/38989c9b-eb91-4b53-b662-8c608da9e6c2
+
 
 ---
 
